@@ -1,8 +1,12 @@
 import React from 'react'
+import Button from '@mui/material/Button';
+
 
 const Navbar = () => {
   return (
-    <h2>Navbasdaar</h2>
+    <>
+      <Button variant="contained">Hello world</Button>
+    </>
   )
 }
 

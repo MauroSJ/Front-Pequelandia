@@ -1,10 +1,10 @@
 import './App.css'
-import Ruta from './routes/Routes'
+import Navbar from './components/common/navbar/Navbar'
 function App() {
 
   return (
     <>
-    <h1>Hello</h1>
+      <Navbar/>
     </>
   )
 }
