@@ -5,7 +5,6 @@ import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import Container from '@mui/material/Container';
 import Avatar from '@mui/material/Avatar';
@@ -95,6 +94,7 @@ function ResponsiveAppBar() {
             component="a"
             href="Pequelandia"
             sx={{
+              ml: 2,
               mr: 2,
               display: { xs: 'none', md: 'flex' },
               fontFamily: 'monospace',
@@ -131,9 +131,8 @@ function ResponsiveAppBar() {
               color="inherit"
               sx={{padding:'0'}}
             >
-            <MenuIcon />
-            </IconButton>
               <img src="https://img.freepik.com/vector-gratis/logotipo-creatividad-pluma_1057-2531.jpg?w=30&t=st=1699482425~exp=1699483025~hmac=df281e5a6175ddaa73344aa7408c38a0c885c6bdc25e2a367d001d6c8ddc399b" height={30} alt="Logo Pequelandia" />
+            </IconButton>
             <Menu
               id="menu-appbar"
               anchorEl={anchorElNav}
