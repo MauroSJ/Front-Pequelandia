@@ -1,12 +1,11 @@
-import { useState } from 'react'
 import './App.css'
+import ProductCard from './components/pages/productCard/ProductCard'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <h1>PEQUELANDIA</h1>
+      <ProductCard/>
       
     </>
   )
