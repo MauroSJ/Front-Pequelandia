@@ -71,9 +71,9 @@ const ProductCard = () => {
           md={7}
           lg={7}
           sx={{
-            marginBottom: { xs: "20px", md: 0 },
+            marginBottom: { xs: "10px", md: 0 },
+            marginX: { xs: "0", md: "10px" },
             border: "solid 2px red",
-            margin: "0px 10px 0px 10px",
             height: "auto",
           }}
         >
@@ -94,7 +94,7 @@ const ProductCard = () => {
             display={"flex"}
             sx={{ justifyContent: "space-between", marginBottom: "10px" }}
           >
-            <Typography display={"flex"} alignItems={"start"}>
+            <Typography variant="h6" display={"flex"} alignItems={"start"}>
               Body Mio Mia
             </Typography>
             <Button sx={{ padding: "0" }}>
@@ -106,18 +106,32 @@ const ProductCard = () => {
             display={"flex"}
             sx={{
               justifyContent: { xs: "start", md: "center" },
+              paddingTop: { lg: "20px" },
               marginBottom: "10px",
             }}
           >
             $2900
           </Typography>
-          <Typography textAlign={"start"}>
+          <Typography
+            textAlign={"start"}
+            sx={{ padding: { lg: "40px 0px 40px 0px" } }}
+          >
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem
             consequuntur nihil officiis consectetur eaque, temporibus deserunt.
             Praesentium, quas vero. Et.
           </Typography>
-          <Box display={"flex"} marginTop={"20px"}>
-            <Button variant="outlined" sx={{ marginRight: "5px" }}>
+          <Box
+            display={"flex"}
+            marginTop={"20px"}
+            sx={{ flexDirection: { xs: "column", md: "column", lg: "row" } }}
+          >
+            <Button
+              variant="outlined"
+              sx={{
+                marginRight: { xs: "none", md: "5px" },
+                marginBottom: { xs: "5px", md: "5px", lg: "auto" },
+              }}
+            >
               Agregar al carrito
             </Button>
             <Button variant="contained">Comprar</Button>
@@ -131,8 +145,12 @@ const ProductCard = () => {
           <Typography
             variant="h6"
             textAlign={"start"}
-            marginLeft={"10px"}
             marginTop={"10px"}
+            sx={{
+              marginX: { xs: "0", md: "10px" },
+              padding: { xs: "5px", md: "0px" },
+              fontSize: { xs: "1rem", md: "unset" },
+            }}
           >
             Opiniones del producto
           </Typography>
